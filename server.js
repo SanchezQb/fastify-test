@@ -1,7 +1,7 @@
 const fastify = require('fastify')({ logger: true })
 
-const appDetails = require('./appDetails')
-const fileDetails = require('./fileDetails')
+const appDetails = require('./app')
+const fileDetails = require('./file')
 
 // Declare a route
 fastify.get('/app', async (request, reply) => {
